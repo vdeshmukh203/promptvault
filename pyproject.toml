@@ -4,11 +4,20 @@ build-backend = "hatchling.build"
 
 [project]
 name = "promptvault"
-version = "0.1.0"
+version = "0.2.0"
 description = "Versioned prompt template storage with history tracking"
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.9"
+dependencies = [
+    "jinja2>=3.0",
+]
+
+[project.optional-dependencies]
+gui = ["streamlit>=1.28"]
+
+[project.scripts]
+promptvault-gui = "promptvault._gui_launcher:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/promptvault"]

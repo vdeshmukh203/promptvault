@@ -1,3 +1,4 @@
-from .vault import Promptvault
-__all__ = ["Promptvault"]
-__version__ = "0.1.0"
+from .vault import Promptvault, TemplateVersion
+
+__all__ = ["Promptvault", "TemplateVersion"]
+__version__ = "0.2.0"
