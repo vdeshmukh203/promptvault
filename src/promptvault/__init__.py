@@ -1,3 +1,16 @@
-from .vault import Promptvault
-__all__ = ["Promptvault"]
-__version__ = "0.1.0"
+from .vault import (
+    Promptvault,
+    TemplateVersion,
+    PromptVaultError,
+    TemplateNotFoundError,
+    RenderError,
+)
+
+__all__ = [
+    "Promptvault",
+    "TemplateVersion",
+    "PromptVaultError",
+    "TemplateNotFoundError",
+    "RenderError",
+]
+__version__ = "0.2.0"
